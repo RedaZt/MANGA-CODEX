@@ -10,8 +10,11 @@
 body {
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("homeImages/martijn-baudoin-KKugFbEI2FU-unsplash.jpg");
     height: 100vh;
+    width: 100vw;
+    overflow: hidden;
     background-size: cover;
 	background-position: center;
+    position: relative;
 }
 
 header {
@@ -72,8 +75,12 @@ button:hover {
 }
 
 .title {
-    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: center; */
+    /* height: 100vh; */
 }
