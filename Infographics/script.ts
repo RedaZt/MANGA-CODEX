@@ -19,13 +19,13 @@ let mangakasCharts = [
 ]
 
 let lightNovelsCharts = [
-    "TOP circulation Light Novels 01.jpg",
-    "TOP circulation Light Novels 02.jpg",
-    "TOP circulation Light Novels 03.jpg",
-    "TOP circulation Light Novels 04.jpg",
-    "TOP circulation Light Novels 05.jpg",
-    "TOP circulation Light Novels 06.jpg",
-    "TOP circulation Light Novels 07.jpg",
+    "TOP circulation Light Novels part 01.jpg",
+    "TOP circulation Light Novels part 02.jpg",
+    "TOP circulation Light Novels part 03.jpg",
+    "TOP circulation Light Novels part 04.jpg",
+    "TOP circulation Light Novels part 05.jpg",
+    "TOP circulation Light Novels part 06.jpg",
+    "TOP circulation Light Novels part 07.jpg",
 ]
 
 let otherCharts = [

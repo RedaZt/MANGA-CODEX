@@ -81,7 +81,6 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
     padding: 0;
     margin: 0;
 }
@@ -103,6 +102,9 @@ p {
 
 h3 {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     width: 300px;
     font-weight: 600;
     color: white;
@@ -118,7 +120,7 @@ h3 {
     display: flex;
     text-align: center;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     overflow: hidden;
     padding: 0;
     margin: 0 30px 20px 0;
