@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --overlay-color: rgba(0, 0, 0, 0.6);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* html {
+    margin: 0 auto;
+    max-width: 1500px;
+} */
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin: 30px 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align:center;
+}
+
+.logo {
+    margin-right: auto;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 5px;
+    background-color: transparent;
+    border: 1px solid #000000;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    margin: 50px 100px;
+    max-width: 1800px;
+}
+
+.cards-container {
+    position: relative;
+    max-width: 1800px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    font-size: 25px;
+    /* align-items: center; */
+    background-color: #000000;
+    padding: 0;
+    margin: 0 30px 20px 0;
+    /* transition: all ease-in-out 65ms; */
+}

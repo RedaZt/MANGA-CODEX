@@ -1,4 +1,5 @@
 "use strict";
+const container = document.querySelector(".container");
 let shonenMagazinesCharts = [
     "WEEKLY SHONEN JUMP.jpg",
     "SHONEN MAGAZINE.jpg",
@@ -56,3 +57,26 @@ fillSection(shonenMagazinesCharts, "shonen-magazines", "charts/shonen magazines"
 fillSection(seinenMagazinesCharts, "seinen-magazines", "charts/seinen magazines");
 fillSection(lightNovelsCharts, "light-novels", "charts/light novels");
 fillSection(otherCharts, "other-charts", "charts/other charts");
+if (container !== null) {
+    container.addEventListener("click", e => {
+        const parent = e.target.parentNode;
+        if (parent != null) {
+            const image = parent.getElementsByTagName('img')[0];
+            // console.log(image.getAttribute("src"));
+            const parentElement = document.createElement('div');
+            parentElement.classList.add("enlarged");
+            parentElement.setAttribute("onclick", "myFunction()");
+            const childImgElement = document.createElement('img');
+            childImgElement.setAttribute("src", String(image.getAttribute("src")));
+            parentElement.appendChild(childImgElement);
+            // console.log((<Element>e.target).classList);
+            document.body.appendChild(parentElement);
+        }
+    });
+}
+function myFunction() {
+    const enlargedImage = document.querySelector(".enlarged");
+    if (enlargedImage != null) {
+        enlargedImage.remove();
+    }
+}
