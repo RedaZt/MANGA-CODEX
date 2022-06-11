@@ -73,22 +73,23 @@ fillSection(otherCharts, "other-charts", "charts/other charts");
 if (container !== null) {
     container.addEventListener("click", e => {
         const parent = (<Element>e.target).parentNode;
+        if ((<Element>parent).classList.contains("card")) {
 
-        if(parent!= null) {
-            const image = (<Element>parent).getElementsByTagName('img')[0];
+            if(parent!= null) {
+                const image = (<Element>parent).getElementsByTagName('img')[0];
 
-            const parentElement = document.createElement('div');
+                const parentElement = document.createElement('div');
 
-            parentElement.classList.add("enlarged");
-            parentElement.setAttribute("onclick", "myFunction()");
-    
-            const childImgElement = document.createElement('img');
-            childImgElement.setAttribute("src", String(image.getAttribute("src")));
+                parentElement.classList.add("enlarged");
+                parentElement.setAttribute("onclick", "myFunction()");
+        
+                const childImgElement = document.createElement('img');
+                childImgElement.setAttribute("src", String(image.getAttribute("src")));
 
-            parentElement.appendChild(childImgElement);
-            document.body.appendChild(parentElement);
+                parentElement.appendChild(childImgElement);
+                document.body.appendChild(parentElement);
+            }
         }
-
     });
 }
 

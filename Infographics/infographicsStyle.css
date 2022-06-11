@@ -17,7 +17,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    align-items: center;
+    /* align-items: center; */
     text-align: center;
 }
 
@@ -72,9 +72,10 @@ button:hover {
     display: flex;
     flex-direction: column;
     /* text-align: left; */
-    margin: 0;
-    padding: 0;
-    max-width: 1800px;
+    /* margin: 0;
+    padding: 0; */
+    /* max-width: 1800px; */
+    max-width: 1600px;
 }
 
 .section {
@@ -84,6 +85,33 @@ button:hover {
     justify-content: center;
     margin: 50px 100px;
     max-width: 1800px;
+}
+
+.pane {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    margin: 50px 100px;
+    max-width: 1800px;
+    background-color: #000000;
+    border-radius: 3px;
+    box-shadow: 0px 2px 20px rgb(0 0 0 / 36%);
+    padding: 3rem;
+}
+
+.pane p {
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 30px;
+}
+.pane h1 {
+    font-style: normal;
+    font-size: 35px;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 0px;
 }
 
 .cards-container {
@@ -154,6 +182,7 @@ h3 {
 }
 .enlarged img{
     position: absolute;
+    padding: 50px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
